@@ -1,6 +1,6 @@
 |Column|Type|Options|
 |------|----|-------|
-|username|integer|null: false|
+|name|integer|null: false|
 |email|integer|null: false|
 |password|integer|null: false|
 
@@ -10,8 +10,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|groupname|integer|null: false|
-|member|integer|null: false|
+|name|integer|null: false|
 
 - has_many :groups_users
 - has_many :users, through: :groups_users
