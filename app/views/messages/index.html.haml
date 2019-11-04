@@ -16,24 +16,9 @@
       .right-header
         Edit
     .messages
-      .message
-        .upper-message
-          .upper-message__user-name
-            ユーザー名
-          .upper-message__date
-            2019/10/25(Fri) 17:36:01
-        .under-message
-          .under-message__text
-            メッセージ
-      .message
-        .upper-message
-          .upper-message__user-name
-            ユーザー名
-          .upper-message__date
-            2019/10/25(Fri) 17:36:01
-        .under-message
-          .under-message__text
-            メッセージ
+
+      = render @messages
+      
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
