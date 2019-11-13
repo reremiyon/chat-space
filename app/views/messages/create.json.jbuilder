@@ -1,5 +1,6 @@
+json.(@message, :content, :image)
 json.id @message.id
 json.user_name @message.user.name
 json.content @message.content
-json.date @message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-json.image @message.image_url
+json.created_at @message.created_at.in_time_zone('Asia/Tokyo').strftime("%Y/%m/%d(%a) %H:%M")
+json.image @message.image.url
