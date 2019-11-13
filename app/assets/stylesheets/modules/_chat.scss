@@ -34,9 +34,10 @@
     }
   }
   .messages{
+    overflow: scroll;
     box-sizing: border-box;
-    height: calc(100% - 190px);
-    padding: 46px 40px 0px;
+    height: calc(100vh - 190px);
+    padding: 46px 40px;
     background-color: #fafafa;
     .message{
       .upper-message{
