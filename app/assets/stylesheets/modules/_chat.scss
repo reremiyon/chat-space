@@ -31,6 +31,9 @@
       border: solid 1px $light-blue;
       color: $light-blue;
       float: right;
+      .editlink{
+        text-decoration: none;
+      }
     }
   }
   .messages{
